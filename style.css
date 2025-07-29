@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d1117;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #161b22;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-icons a img {
+  width: 24px;
+  margin: 0 10px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s;
+}
+.nav-icons a:hover img {
+  transform: scale(1.2);
+  filter: brightness(0) invert(1) sepia(1) hue-rotate(20deg) saturate(4);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+}
+
+.hero-left {
+  max-width: 50%;
+}
+
+.hero-left .highlight {
+  color: orange;
+}
+
+.role {
+  font-size: 2rem;
+  color: orange;
+  margin-top: -10px;
+}
+
+.cta-btn {
+  background: orange;
+  color: #000;
+  padding: 0.8rem 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+.socials a img {
+  width: 24px;
+  margin-right: 10px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s;
+}
+.socials a:hover img {
+  transform: scale(1.2);
+  filter: brightness(0) invert(1) sepia(1) saturate(6) hue-rotate(-20deg);
+}
+
+.hero-right .profile-pic {
+  width: 300px;
+  border: 5px solid orange;
+  border-radius: 10px;
+}
+.content-section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  background-color: #161b22;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.1);
+}
+
+.project-card {
+  background-color: #0d1117;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-left: 4px solid orange;
+  border-radius: 6px;
+}
+.nav-icons a,
+.socials a {
+  margin: 0 8px;
+  color: white;
+  font-size: 1.4rem;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.nav-icons a:hover,
+.socials a:hover {
+  transform: scale(1.2);
+  color: orange;
+}

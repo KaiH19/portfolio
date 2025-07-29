@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Kai Hinterholzer</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .cert-grid img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 165, 0, 0.15);
+      transition: transform 0.3s;
+    }
+
+    .cert-grid img:hover {
+      transform: scale(1.02);
+    }
+
+    .cert-grid a {
+      display: block;
+      text-align: center;
+      color: orange;
+      margin-top: 0.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-icons">
+      <a href="../index.html"><i class="fas fa-home"></i></a>
+      <a href="about.html"><i class="fas fa-user"></i></a>
+      <a href="projects.html"><i class="fas fa-code"></i></a>
+      <a href="contact.html"><i class="fas fa-envelope"></i></a>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section class="content-section">
+    <h1>About Me</h1>
+    <p>
+      I am a passionate and driven student on my way to becoming a software engineer. 
+      With a strong desire to solve problems and create unique solutions, 
+      I am committed to creating effective and efficient software systems. 
+      My interests lie in the crossroads of technology and creativity, 
+      and I hope to build systems that will have a meaningful impact. 
+      I am now polishing my talents in programming, data analysis, and software design, 
+      as well as investigating new areas such as cloud computing, machine learning, and web development. 
+      I am committed to lifelong learning and enthusiastic about collaborating with others to drive innovation and 
+      create transformative solutions.
+    </p>
+
+    <h2>Education</h2>
+    <p><strong>Belgium Campus iTversity (RSA)</strong> - Bachelor of Computing 3rd Year (2023-2026)</p>
+    <ul>
+      <li>Relevant Coursework: Software Development, Software Analysis and Design, Software Testing, Database Development, User Interface Development, Web Design, Project Management, Machine Learning, Cloud Computing</li>
+    </ul>
+
+    <h2>Certifications</h2>
+    <div class="cert-grid">
+      <div>
+        <img src="../assets/certifications/Machine Learning A-Z AI, Python & R_UC-204f64eb-d5b5-4da6-994f-684c2e2d8813.jpg" alt="ML A-Z Certificate">
+        <a href="#">Machine Learning A-Z (July 2025)</a>
+      </div>
+      <div>
+        <img src="../assets/Certifications/The Complete Full-Stack Web Development Bootcamp_UC-bcc96ecd-b8a4-4fbb-845c-f151105f726b.jpg" alt="Web Dev Bootcamp">
+        <a href="#">Web Development Bootcamp (Dec 2024)</a>
+      </div>
+      <div>
+        <img src="../assets/certifications/Screenshot 2025-07-29 030007.png" alt="Agentic Automation PDF" />
+        <a href="#">Agentic Automation Masterclass (May 2025)</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

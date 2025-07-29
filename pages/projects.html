@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Kai Hinterholzer</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    .project-entry {
+      display: flex;
+      align-items: center;
+      background: #0d1117;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 165, 0, 0.05);
+      margin: 1.5rem 0;
+      gap: 1.5rem;
+      transition: transform 0.3s;
+    }
+
+    .project-entry:hover {
+      transform: translateY(-4px);
+    }
+
+    .project-image-side {
+      width: 200px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .divider {
+      width: 4px;
+      height: 120px;
+      background-color: orange;
+      border-radius: 2px;
+    }
+
+    .project-content {
+      flex: 1;
+    }
+
+    .project-content h2 {
+      margin: 0;
+      font-size: 1.4rem;
+      color: white;
+    }
+
+    .project-content p {
+      margin-top: 0.5rem;
+      color: #ccc;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+      .project-entry {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .divider {
+        width: 80%;
+        height: 2px;
+        margin: 1rem 0;
+      }
+
+      .project-image-side {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-icons">
+      <a href="../index.html" title="Home"><i class="fas fa-home"></i></a>
+      <a href="about.html" title="About"><i class="fas fa-user"></i></a>
+      <a href="projects.html" title="Projects"><i class="fas fa-code"></i></a>
+      <a href="contact.html" title="Contact"><i class="fas fa-envelope"></i></a>
+    </div>
+  </nav>
+
+  <!-- Project Section -->
+  <section class="content-section">
+    <h1>Projects</h1>
+
+    <div class="project-entry">
+      <img src="../assets/projects/laliga.png" alt="La Liga Predictor" class="project-image-side" />
+      <div class="divider"></div>
+      <div class="project-content">
+        <h2>Forecasting La Liga Winners</h2>
+        <p>Developed a system to predict La Liga winners using a decade of historical match and player data. Engineered season-level features like Elo ratings, squad value, and win rates. Trained MLP and Random Forest models to forecast top teams and simulate league tables. Deployed a DASH web app via Render to visualize predictions and allow season simulations. Evaluated model accuracy against past seasons and improved interpretability through data visualizations.</p>
+      </div>
+    </div>
+
+    <div class="project-entry">
+      <img src="../assets/projects/Fleet-management-Costs-Telematics.jpg" alt="Fleet Management" class="project-image-side" />
+      <div class="divider"></div>
+      <div class="project-content">
+        <h2>Fleet Management Dashboard</h2>
+        <p>Built a full-stack dashboard for real-time GPS tracking and vehicle maintenance alerts. Integrated MapLibre GL JS and simulated telemetry data for live tracking. Used WebSockets for real-time updates and MongoDB to store vehicle history. Implemented rule-based alerts based on mileage and service intervals.</p>
+      </div>
+    </div>
+
+    <div class="project-entry">
+      <img src="../assets/projects/How-to-make-an-auction-website_2.jpg" alt="Auction System" class="project-image-side" />
+      <div class="divider"></div>
+      <div class="project-content">
+        <h2>Online Auction System</h2>
+        <p>Developed a real-time auction platform with live bidding using ASP.NET Core and SignalR. Enabled instant updates, dynamic closing, and bid tracking via Redis and PostgreSQL. Included secure user authentication, admin tools, and simulated payment integration.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
